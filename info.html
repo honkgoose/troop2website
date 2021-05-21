@@ -54,6 +54,47 @@ font-family: 'Raleway', sans-serif;
 }
 
 .btn:hover {background: #eee;}
+/* Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eee;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #eee;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #eee;}
 
 
 h2 {
@@ -75,15 +116,19 @@ display:inline
 <h1>Troop 2 Ithaca</h1><br>
 </div>
 <div style="text-align:center;padding:8px;">
-<button class="btn success">Photos</button>
-<button class="btn info">Info</button>
-<button class="btn warning">News</button>
-<button class="btn danger">Eagles</button>
-<button class="btn default">Links</button>
-<hr style = "color:gray; background-color:gray;">
+<button class="btn info"><a href ="photos.html" style = "text-decoration: none; color: black;">Photos</a></button>
+
+<!----------<div class="dropdown">
+  <button class="dropbtn">Info▼</button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="info.html">Info</a>
+  </div>
+</div> ------>
+<button class="btn info"><a href ="info.html" style = "text-decoration: none; color: black;">Info</a></button>
+<button class="btn info"><a href ="eagles.html" style = "text-decoration: none; color: black;">Eagles</a></button>
+
 </div>
-
-
+<hr>
 <div style = "text-align:left; margin-left:25%; margin-right:25%;">
 	<div id = "main">
 					<h1 style = "font-size:24;">Information</h1>

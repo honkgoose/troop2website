@@ -2,15 +2,16 @@
 <html>
 <head>
 <html lang="en-US" class>
+<link href="favicon.ico" rel="icon" type="image/x-icon" />
 <head>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> Troop 2 </title>
 <style>
 body, html {
   height: 100%;
+font-family: 'Raleway', sans-serif;
 }
 
 .parallax {
@@ -25,7 +26,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+}
 
 
 
@@ -34,108 +35,164 @@ body, html {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #003d03;
+   background-color: darkgreen;
    color: white;
    text-align: center;
-   padding: 5px 0px;
+   padding: 100000px 0px;
 }
 
 
 
 
-.topnav {
-  overflow: hidden;
-  background-color: #white;
-}
-
-.topnav a {
-  position: absolute;
-  display: block;
-  top: 0px;
-  left: 150px;
-  color: #a9a9a9;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  
-}
-
-.topnav a:hover {
-  background-color: #ddd;
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
   color: black;
+  text-decoration: none;
 }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+.btn:hover {background: #eee;}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
 
-.topnav .icon {
+/* The container  - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
   display: none;
+  position: absolute;
+  background-color: #eee;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #eee;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #eee;}
 
 
+h2 {
+background-color:white;
+color:green;
 }
+h1 {
+background-color:white;
+color:green;
+display:inline
+}
+
 </style>
 </head>
-<body>
+<body style ="height:100%;">
 
 
-<div align=left>
-<div class="topnav" id="myTopnav">
-  <a href="#home">Home</a> 
-  <!--<a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <a href="#news">News</a>-->
+<div style="text-align:center;font-size:36px;">
+
+<h1>Troop 2 Ithaca</h1>
 </div>
-</div>
+<div style="text-align:center;padding:8px;position:-webkit-sticky;position:sticky;top:0px;background-color:white; height:auto;">
+<button class="btn info"><a href ="photos.html" style = "text-decoration: none; color: black;">Photos</a></button>
 
+<!----------<div class="dropdown">
+  <button class="dropbtn">Info▼</button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="info.html">Info</a>
+  </div>
+</div> ------>
+<button class="btn info"><a href ="info.html" style = "text-decoration: none; color: black;">Info</a></button>
+<button class="btn info"><a href ="eagles.html" style = "text-decoration: none; color: black;">Eagles</a></button>
+
+</div>
 <div class="parallax"></div>
 <div align="center">
 <div style="background-color:white;font-size:24px">
 <h2>About Troop 2</h2>
 <p style="width: 750px">	Formed in 1916 with the Reverend H.J. Condit of the First Congregational Church as the first Scoutmaster, Troop 2 has, apart from a few years around the 2nd World War,
 			        nearly ninety years as an active unit offering great opportunities for self-improvement and learning to boys in the Ithaca area.
-					Weekly meetings are held during the school year at our sponsoring organization, First Congregational Church, 309 Highland Rd in Ithaca (get directions). 
+					Weekly meetings are held during the school year at our sponsoring organization, First Congregational Church, <a href ="https://www.google.com/maps/place/309+Highland+Rd,+Ithaca,+NY+14850/@42.4578376,-76.4878427,17z/data=!3m1!4b1!4m5!3m4!1s0x89d0822484ba477d:0x7f364936e922542d!8m2!3d42.4578337!4d-76.485654"> 309 Highland Rd in Ithaca.</a> 
 					2019 saw more campouts and biking trips, another great summer at Camp Barton, plenty of outdoor fun and activities as well as the advancement of our 47th
 					Eagle Scout since 1972. We are compiling a troop history and would be pleased to
 					receive any information or photos to fill in the gaps, names of scoutmasters, Eagle scouts etc.<p>
 
  <h2>Contact info</h2>
-  <p>Email:IthacaTroop2@gmail.com</p>
+  <td>Email:
+  <a href="mailto:ithacatroop2@gmail.com">
+  Troop2Ithaca@gmail.com</a></td>
   
   
-  <h2>Calendar</h2>
+  <h2>Scout Oath</h2>
+<p style="width: 750px">
+On my honor I will do my best to do my duty to God and my country and to obey the Scout Law; to help other people at all times; to keep myself physically strong, mentally awake, and morally straight.
+</p>
+
+<div>
+<h2>Scout Law</h2>
+<ul style = "list-style-type:none;margin-left:25%; margin-right: 25%;font-size:24px;text-align:left;">
+<li>A Scout is:</li>
+
+<li><b>TRUSTWORTHY.</b> Tell the truth and keep promises. People can depend on you.</li>
+
+<li><b>LOYAL.</b> Show that you care about your family, friends, Scout leaders, school, and country.</li>
+
+<li><b>HELPFUL.</b> Volunteer to help others without expecting a reward.</li>
+
+<li><b>FRIENDLY.</b> Be a friend to everyone, even people who are very different from you.</li>
+
+<li><b>COURTEOUS.</b> Be polite to everyone and always use good manners.</li>
+
+<li><b>KIND.</b> Treat others as you want to be treated. Never harm or kill any living thing without good reason.</li>
+
+<li><b>OBEDIENT.</b> Follow the rules of your family, school, and pack. Obey the laws of your community and country.</li>
+
+<li><b>CHEERFUL.</b> Look for the bright side of life. Cheerfully do tasks that come your way. Try to help others be happy.</li>
+
+<li><b>THRIFTY.</b> Work to pay your own way. Try not to be wasteful. Use time, food, supplies, and natural resources wisely.</li>
+
+<li><b>BRAVE.</b> Face difficult situations even when you feel afraid. Do what you think is right despite what others might be doing or saying.</li>
+
+<li><b>CLEAN.</b> Keep your body and mind fit. Help keep your home and community clean.</li>
+
+<li><b>REVERENT.</b> Be reverent toward God. Be faithful in your religious duties. Respect the beliefs of others.</li>
+
+</ul>
 </div>
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=YmVud2FneUBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZmFtaWx5MDU0NTA4ODE0MjM4MzI0MDgwNDdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%238E24AA&amp;color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="n"></iframe>
 
+<h2>Outdoor Code</h2>
 
-
+<p style="width: 750px">
+As a citizen of the world, I will do my best, to be clean in my outdoor manners, to be careful with fire, and to be considerate in the outdoors.
+</div>
 <div class="footer">
-  <p>Website by Benjamin Wagner</p>
+  <img src="logo.png" alt "logo"
 </div>
 </div>
 </body>
